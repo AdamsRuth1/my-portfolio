@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Define your dark-mode styles here */
+        body.dark-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <title>Dark Mode Example</title>
+</head>
+<body>
+
+<button id="darkmode" onclick="toggleDarkMode()">Click me for dark mode</button>
+
+<script>
+    function toggleDarkMode() {
+        var body = document.body;
+        body.classList.toggle('dark-mode');
+    }
+</script>
+
+</body>
+</html>

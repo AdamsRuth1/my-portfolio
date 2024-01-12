@@ -1,4 +1,4 @@
-const toggleBtn = document.querySelector(".sidebar-toggle");
+const toggleBtn = document.getElementById("hamburger");
 const closeBtn = document.querySelector(".close-btn");
 const sidebar = document.querySelector(".sidebar");
 
@@ -13,4 +13,10 @@ toggleBtn.addEventListener("click", function () {
 
 closeBtn.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");
+
 });
+
+function toggleDarkMode() {
+    var body = document.body;
+    body.classList.toggle('dark-mode');
+}
